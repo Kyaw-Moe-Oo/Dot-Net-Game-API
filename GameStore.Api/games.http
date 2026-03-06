@@ -1,26 +1,27 @@
 GET http://localhost:5259/games
 
 ###
-GET http://localhost:5259/games/4
+GET http://localhost:5259/games/3
 
 ###
 POST http://localhost:5259/games
 Content-Type: application/json
 
 { 
-    "name": "MinecraftMinecraftMinecraftMinecraftMinecraftMinecraftMinecraftMinecraftMinecraftMinecraft",
-    "genre": "Kids and Family",
-    "price": 119.99,
-    "releaseDate": "2011-11-18"
+    "name": "Final Fantasy XIV",
+    "genreId": 2,
+    "price": 59.99,
+    "releaseDate": "2010-09-30"
 }
 
 ###
-PUT http://localhost:5259/games/2
+PUT http://localhost:5259/games/3
 Content-Type: application/json
 
   {
-    "genre": "Fighting",
-    "price": 9.99,
+    "name": "Street Fighter II Turbo",
+    "genreId": 1,
+    "price": 19.99,
     "releaseDate": "1991-02-01"
   }
 
